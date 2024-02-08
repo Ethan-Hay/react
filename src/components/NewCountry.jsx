@@ -21,7 +21,7 @@ const NewCountry = (props) => {
     newCountryName.length > 0 ? props.onAdd(newCountryName) : setShowToast(true);
     handleModalClose();
   }
-  
+
   return (
     <React.Fragment>
       <Button variant="outline-success" onClick={ handleModalShow }>

@@ -21,15 +21,13 @@ const App = () => {
     // initial data loaded here
     let fetchedCountries = [
       { id: 1, name: 'United States', gold: 2, silver: 2, bronze: 3 },
-      { id: 2, name: 'Gensokyo', gold: 9, silver: 0, bronze: 0 },
-      { id: 3, name: 'Lunaria', gold: 0, silver: 2, bronze: 8 },
+      { id: 2, name: 'Gensokyo', gold: 9, silver: 1, bronze: 0 },
+      { id: 3, name: 'Lunaria', gold: 0, silver: 2, bronze: 2 },
     ]
-    
-  
-  setCountries(fetchedCountries);
-}, []);
+    setCountries(fetchedCountries);
+  }, []);
 
-const handleAdd = (name) => {
+  const handleAdd = (name) => {
     const id = countries.length === 0 ? 1 : Math.max(...countries.map(country => country.id)) + 1;
     setCountries([...countries].concat({ id: id, name: name, gold: 0, silver: 0, bronze: 0 }));
   }

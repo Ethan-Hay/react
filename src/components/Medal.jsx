@@ -2,8 +2,6 @@ import React from 'react';
 import Badge from 'react-bootstrap/Badge';
 import { DashSquare, PlusSquare } from 'react-bootstrap-icons';
 
-
-
 const Medal = (props) => {
   const { medal, country, onIncrement, onDecrement } = props;
   return (

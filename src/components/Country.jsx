@@ -1,9 +1,9 @@
 import React from 'react';
 import Medal from './Medal';
+import { TrashFill } from 'react-bootstrap-icons';
 import Card from 'react-bootstrap/Card';
 import Badge from 'react-bootstrap/Badge';
 import ListGroup from 'react-bootstrap/ListGroup';
-import { TrashFill } from 'react-bootstrap-icons';
 
 const Country = (props) => {
   const { country, medals, onIncrement, onDecrement, onDelete } = props;
